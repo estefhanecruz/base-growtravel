@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4287f5;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+}
+li{
+    margin: 20px 10px 25px 35px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+}
+p{
+    text-align: center;
+    margin: 1rem 4rem 1rem 4rem;
+}
+#imgViajante{
+    width: 55vw;
+    height: 55vh;
+}
+section{
+    text-align: center;
+}
+.tituloSecao{
+    font-size: 2.5rem;
+}
+.botao{
+    margin: 15px 5px 15px 5px;
+    padding: 15px 45px 15px 45px;  
+    border-radius: 2rem;
+    border: none;
+    background-color: #4287f5;
+    color: white;
+    font-size: 1rem;
+}
+#imgAeroporto{
+    width: 55vw;
+    height: 55vh;
+}
+footer{
+    text-align: center;
+    color: darkgrey;
+    margin: 15px 20px 30px 20px;
+}
