@@ -10,7 +10,7 @@ hr{
 header{
 
 }
-ul{
+.menu-navegacao ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,11 +19,23 @@ ul{
     width: 100vw;
     justify-content: flex-start;
 }
-li{
+.menu-navegacao li{
     margin: 20px 10px 25px 35px;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: white;
+}
+.menu-navegacao a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-navegacao a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-navegacao a:hover{
+    color: orange;
+    text-decoration: underline;
 }
 p{
     text-align: center;
@@ -50,6 +62,7 @@ section{
     font-size: 1rem;
 }
 .botao:hover{
+    font-weight: bold;
     background-color: aqua;
     cursor: pointer;
 }
@@ -84,4 +97,16 @@ th, td{
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+}
+/*float button WhatsApp*/
+.box-fixed{
+    position: fixed;
+    bottom: 60px;
+    right: 80px;
+    width: 30px;
+    height: 50px;
+    z-index: 1000;
+}
+#wpp-logo{
+    width: 100px;
 }
