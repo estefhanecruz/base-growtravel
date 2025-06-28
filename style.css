@@ -5,133 +5,141 @@
     margin: 0;
 }
 
-section{
-    text-align: center;
-    padding: 48px;
-    border-bottom: 1px solid #c0bdbd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-img{
-    width: 400px;
-}
-h2{
-    font-size: 48px;
-    margin: 8px 0;
-}
-/*Início do Menu de navegação*/
+
 header{
     background-color: #4287f5;
     padding: 24px;
 }
 
-nav.menu > ul{
-    display: flex;
-    gap: 48px;
-}
 nav.menu li{
     list-style-type: none;
+    margin: 12px 0;
+
 }
-nav.menu li > a{
-    color: #fcfcfc;
+
+nav.menu li > a {
     text-decoration: none;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
-
-nav.menu li > a:hover{
-    color: orange;
-    text-decoration: underline;
+h2{
+    font-size: 48px;
+    margin: 8px 0 24px 0;
 }
-
-/*Fim do Menu de navegação*/
-
-/*Início da estilização do início*/
-/*Flexbox*/
-
-section#inicio{
-    flex-direction: row-reverse;
-
+section{
+    text-align: center;
+    padding: 48px 24px;
+    border-bottom: 1px solid #cccccc;
 }
-/*fim da estilização do início*/
-
-/*Início da estilização da section Quem Somos*/
-section#quem-somos {
-    gap: 48px;   
-}
-section#quem-somos > div{
-    text-align: left;
-    width: 60%;
-}
-section#quem-somos > img{
-    width: 40%;
-}
-/*Fim da estilização da section Quem Somos*/
-
-/*Início da estilização da section Planos*/
-
-section#planos{
-    flex-direction: column;
-    padding: 48px 0;
-}
-
-/*Fim da estilização da section Planos*/
-
-/*Estilização básica da tabela*/
-table{
-   width: 70%;
-}
-table, td, th{
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-}
-/*Estilização para as células (th e td)*/
-th, td{
-    padding: 12px;
-    
-}
-/*float button WhatsApp*/
-.box-fixed{
-    position: fixed;
-    bottom: 60px;
-    right: 80px;
-    width: 30px;
-    height: 50px;
-    z-index: 1000;
-}
-#wpp-logo{
-    width: 100px;
-}
-
 button.botao{
-    padding: 18px 48px;  
+    padding: 18px 48px;
     border-radius: 48px;
     border: 1px solid #4287f5;
     background-color: #4287f5;
-    color: white;
     font-size: 16px;
+    color: white;
     margin: 24px 0;
 }
-button.botao:hover{
-    font-weight: bold;
-    background-color: aqua;
-    cursor: pointer;
-}
 
+section#quem-somos > div > p{
+    text-align: left;
+}
+table{
+    min-width: 450px;
+}
+table, td, th{
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td, th{
+    padding: 12px;
+}
+tbody th {
+    text-align: left;
+}
+div#container-tabela{
+    width: 100vw;
+    overflow-x: scroll;
+}
+a#botao-flutuante{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;   
+
+}
+a#botao-flutuante > img{
+    width: 60px;
+}
 footer{
-    padding: 24px;
+    padding: 24px;    
 }
-footer > p {
-    text-align: center;
-    font-size: 14px;
+footer p{    
+    font-size: 14;
     color: grey;
+    text-align: center;
 }
+@media screen and (min-width: 768px){
 
+    nav.menu > ul{
+        display: flex;
+        gap: 48px;
+    }
+    div#container-tabela{
+        width: 100%;
+        overflow: hidden;
+    }
+    table{
+        width: 70%;
+    }
+    section img{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    section img{
+        width: 70%;
+    }
+    section#quem-somos > div{
+        padding: 0 24px;
+    }
+}
+@media screen and (min-width: 992px){
+    
+    nav.menu li >a{
+        color: #cccccc;
+    }
+    nav.menu li >a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section#inicio{
+        flex-direction: row-reverse;
+        gap: 24px;
+    }
+    section img{
+        width: 40%;
+    }
+    button.botao:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    section#quem-somos{
+        gap: 48px;
+        text-align: left;
+    }
+    section#quem-somos > div{
+        width: 50%;
+    }
+    section#planos{
+        flex-direction: column;
+    }
 
-
-
-
-
-
-
+}
